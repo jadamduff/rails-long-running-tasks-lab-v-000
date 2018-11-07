@@ -53,7 +53,6 @@ class SongsController < ApplicationController
       artist = Artist.create(name: song[1])
       song.artist = artist
       artist.songs << song
-      binding.pry
     end
 
     redirect_to songs_path
