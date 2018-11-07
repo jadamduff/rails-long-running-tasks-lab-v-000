@@ -55,6 +55,8 @@ class SongsController < ApplicationController
       artist.songs << song
     end
 
+    binding.pry
+
     redirect_to songs_path
   end
 
